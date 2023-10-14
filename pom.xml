@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.example</groupId>
+  <artifactId>FileProcessing</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>9</source>
+          <target>9</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <name>Archetype - FileProcessing</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <spring.ver>6.0.6</spring.ver>
+    <maven.compiler.source>19</maven.compiler.source>
+    <maven.compiler.target>19</maven.compiler.target><org.slf4j.version>2.0.7</org.slf4j.version>
+  </properties>
+ <dependencies>
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>${spring.ver}</version>
+  </dependency>
+
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context-support</artifactId>
+    <version>${spring.ver}</version>
+  </dependency>
+
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-tx</artifactId>
+    <version>${spring.ver}</version>
+  </dependency>
+     <dependency>
+         <groupId>com.drewnoakes</groupId>
+         <artifactId>metadata-extractor</artifactId>
+         <version>2.18.0</version>
+     </dependency>
+<!--     <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-api</artifactId>
+         <version>${org.slf4j.version}</version>
+     </dependency>
+     <dependency>
+     <groupId>org.slf4j</groupId>
+     <artifactId>slf4j-simple</artifactId>
+     <version>${org.slf4j.version}</version>
+     </dependency>-->
+ </dependencies>
+
+</project>
